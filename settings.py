@@ -6,8 +6,8 @@ author baiyu
 
 
 
-g_shapenet_path = '/media/admin-bai/000CA9E800027341/DATA/RenderForCNN-master/datasets/shapenetcore'
-g_blender_excutable_path = '/home/admin-bai/Downloads/blender-2.79b-linux-glibc219-x86_64/blender'
+g_shapenet_path = '/projects/katefgroup/datasets/shamit_shapenet/ShapeNetCore.v2'
+g_blender_excutable_path = '/home/shamitl/blender-2.79b-linux-glibc219-x86_64/blender'
 
 #if you have multiple viewpoint files, add to the dict
 #files contains azimuth,elevation,tilt angles and distance for each row

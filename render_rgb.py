@@ -236,6 +236,7 @@ init_all()
 
 # result_dict = pickle.load(open(os.path.join(g_temp, g_result_dict), 'rb'))
 result_list = [['/home/mihir/Documents/projects/3dblender/shapenet_data/ShapeNetCore.v2/03797390/3d1754b7cb46c0ce5c8081810641ef6/models/model_normalized.obj']]
+result_list = [['/projects/katefgroup/datasets/shamit_shapenet/ShapeNetCore.v2/03797390/3d1754b7cb46c0ce5c8081810641ef6/models/model_normalized.obj']]
 # st()
 
 for obj_name, models in zip(g_render_objs, result_list):
@@ -245,8 +246,16 @@ for obj_name, models in zip(g_render_objs, result_list):
     
     for model in models:
         clear_mesh()
-        st()
+        # st()
         bpy.ops.import_scene.obj(filepath=model)
+        # obj_object = bpy.context.selected_objects[0]
+        # me = obj_object.data
+        # if me.uv_textures.active is not None:
+        #     for tf in me.uv_textures.active.data:
+        #         if tf.image:
+        #             st()
+        #             img = tf.image.name
+        #             print(img)
         #combine_objects()
         #scale_objects(0.5)
         viewpoints = [(3.2275,2.85118,24.9159,2.78339),(3.2275,2.85118,24.9159,2.78339),(3.2275,2.85118,24.9159,2.78339)]
