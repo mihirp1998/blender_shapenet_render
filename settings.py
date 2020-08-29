@@ -13,13 +13,13 @@ g_blender_excutable_path = '/home/shamitl/blender-2.79b-linux-glibc219-x86_64/bl
 #files contains azimuth,elevation,tilt angles and distance for each row
 g_view_point_file ={
     'chair' : 'view_points/chair.txt',
-    '03797390' : 'view_points/bottle.txt',
+    'mug' : 'view_points/bottle.txt',
     'table' : 'view_points/diningtable.txt',
     'sofa' : 'view_points/sofa.txt',
     'bed' : 'view_points/bed.txt'
 }
 
-g_render_objs = ['03797390']
+g_render_objs = ['mug']
 
 #change this path to your background image folder
 g_background_image_path = 'background_image'
